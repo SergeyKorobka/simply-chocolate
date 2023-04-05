@@ -7,13 +7,6 @@
 
     <title>Simply Chocolate</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -21,25 +14,430 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css"
+    />
+
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-61f49026.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-aec1e07f.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-7a4b528f.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="container header-container">
+    <a class="logo header-logo" href="./index.html"
+      ><span class="logo-text-wrap"
+        ><span class="logo-part">simply</span> chocolate</span
+      >
+      <svg class="logo-icon">
+        <use href="/simply-chocolate/assets/sprite-ed8a9dbb.svg#icon-logo"></use></svg
+    ></a>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+    <div class="header-menu" id="mobile-menu" data-menu>
+      <button class="btn-close-menu" type="button" data-close-menu>
+        <svg class="icon-close-menu">
+          <use href="/simply-chocolate/assets/sprite-ed8a9dbb.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">How it’s made?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our products</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Top sellers</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg class="social-icon">
+              <use href="/simply-chocolate/assets/sprite-ed8a9dbb.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="">
+            <svg class="social-icon">
+              <use href="/simply-chocolate/assets/sprite-ed8a9dbb.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <button
+      class="btn-burger"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-open-menu
+    >
+      <svg class="icon-burger">
+        <use href="/simply-chocolate/assets/sprite-ed8a9dbb.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
 </header>
 
+
+    <main>
+      <section class="section-hero">
+  <div class="container container-hero">
+    <h1 class="visually-hidden">simply chocolate</h1>
+
+    <p class="hero-subtitle">
+      Treat yourself or a loved one to our finest ingredients for a moment of
+      pure delight!
+    </p>
+
+    <div class="hero-btn-wrap">
+      <button class="button main" type="button">Buy now</button>
+      <a class="button secondary hero-link" href="#">How it’s made</a>
+      <a class="hero-scroll-down" href="#"
+        >scroll down
+        <span class="scroll-down-elipse"
+          ><svg class="scroll-down-icon">
+            <use href="/simply-chocolate/assets/sprite-ed8a9dbb.svg#icon-arrow-down"></use></svg></span
+      ></a>
+    </div>
+  </div>
+</section>
+
+      <section class="section-advantages">
+  <div class="container">
+    <h2 class="visually-hidden">Advantages</h2>
+    <ul class="advantages-list">
+      <li class="advantages-item">
+        <div class="advantages-thumb">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="/simply-chocolate/assets/sprite-ed8a9dbb.svg#icon-chocolate-bar"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-title">Unsurpassed taste</h3>
+        <p class="advantages-text">
+          Crafted with the finest quality cocoa beans and a dedication to
+          perfection, each bite is a decadent experience that simply cannot be
+          matched. Savor the richness and complexity of our Unsurpassed Taste
+          and discover a new level of chocolate bliss.
+        </p>
+      </li>
+      <li class="advantages-item">
+        <div class="advantages-thumb">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="/simply-chocolate/assets/sprite-ed8a9dbb.svg#icon-coin"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-title">Affordable price</h3>
+        <p class="advantages-text">
+          Indulge in high-quality chocolate without breaking the bank with
+          Simply Chocolate's selection of affordable treats. Enjoy
+          mouth-watering truffles and velvety chocolate bars without sacrificing
+          taste or quality. Browse our selection and indulge in affordable
+          luxury today.
+        </p>
+      </li>
+      <li class="advantages-item">
+        <div class="advantages-thumb">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="/simply-chocolate/assets/sprite-ed8a9dbb.svg#icon-spoon"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-title">Own production</h3>
+        <p class="advantages-text">
+          We take pride in our own production process, ensuring that every step
+          is carefully crafted to perfection. From selecting the finest
+          ingredients to handcrafting each piece, our attention to detail is
+          evident in every bite.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section section-comp">
+  <div class="container">
+    <h2 class="section-title comp-title">
+      IT ALL ADDS UP TO ONE EXCEPTIONAL
+      <span class="accent-color">TASTE</span> SENSATION
+    </h2>
+    <p class="comp-subtitle">
+      At Simply Chocolate, we believe that the secret to exceptional chocolate
+      is in the details. From the sourcing of the finest ingredients to the
+      careful crafting of each individual piece, every step of our process adds
+      up to one exceptional taste sensation.
+    </p>
+    <ul class="comp-list">
+      <li class="comp-item">
+        <div class="comp-card-flip">
+          <div class="comp-card-front">
+            <picture>
+              <source
+                srcset="/simply-chocolate/assets/comp1-desk@1x-00aab62a.png 1x, /simply-chocolate/assets/comp1-desk@2x-f3254470.png 2x"
+                media="(min-width: 1200px)"
+                width="206"
+                height="160"
+              />
+
+              <img
+                class="comp-img"
+                srcset="/simply-chocolate/assets/comp1-mob@1x-4319fa12.png 1x, /simply-chocolate/assets/comp1-mob@2x-943cd40f.png 2x"
+                src="/simply-chocolate/assets/comp1-desk@1x-00aab62a.png"
+                alt="Milk chocolate"
+                width="224"
+                height="171"
+              />
+            </picture>
+            <p class="comp-card-front-title">milk chocolate</p>
+          </div>
+
+          <div class="comp-card-back">
+            <h3 class="comp-card-back-title">Milk chocolate</h3>
+            <ul class="comp-card-back-list">
+              <li class="comp-card-back-item">
+                <button class="comp-card-back-btn is-active" type="button">
+                  chocolate
+                </button>
+              </li>
+              <li class="comp-card-back-item">
+                <button class="comp-card-back-btn" type="button">
+                  the benefits
+                </button>
+              </li>
+            </ul>
+            <div class="comp-card-back-wrp">
+              <p class="comp-card-back-descr">
+                Milk chocolate is a solid chocolate confectionery containing
+                cocoa, sugar and milk. It is the most consumed type of
+                chocolate. Chocolate was originally sold and consumed as a
+                beverage in pre-Columbian times. Although four-fifths of all
+                milk chocolate is sold in the United States and Europe,
+                increasingly large amounts are consumed in China and Latin
+                America.
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="comp-item">
+        <div class="comp-card-flip">
+          <div class="comp-card-front">
+            <picture>
+              <source
+                srcset="/simply-chocolate/assets/comp2-desk@1x-8b396812.png 1x, /simply-chocolate/assets/comp2-desk@2x-c0604501.png 2x"
+                media="(min-width: 1200px)"
+                width="206"
+                height="160"
+              />
+
+              <img
+                class="comp-img"
+                srcset="/simply-chocolate/assets/comp2-mob@1x-4fd65aa8.png 1x, /simply-chocolate/assets/comp2-mob@2x-a5f5979e.png 2x"
+                src="/simply-chocolate/assets/comp2-desk@1x-8b396812.png"
+                alt="Milk"
+                width="224"
+                height="171"
+              />
+            </picture>
+            <p class="comp-card-front-title">Milk</p>
+          </div>
+
+          <div class="comp-card-back">
+            <h3 class="comp-card-back-title">Milk</h3>
+            <ul class="comp-card-back-list">
+              <li class="comp-card-back-item">
+                <button class="comp-card-back-btn is-active" type="button">
+                  milk
+                </button>
+              </li>
+              <li class="comp-card-back-item">
+                <button class="comp-card-back-btn" type="button">
+                  the benefits
+                </button>
+              </li>
+            </ul>
+
+            <div class="comp-card-back-wrp">
+              <p class="comp-card-back-descr">
+                Milk is a white liquid food produced by the mammary glands of
+                mammals. It is the primary source of nutrition for young mammals
+                (including breastfed human infants) before they are able to
+                digest solid food.Early-lactation milk, which is called
+                colostrum, contains antibodies that strengthen the immune
+                system, and thus reduces the risk of many diseases. Milk
+                contains many nutrients, including protein and lactose.
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="comp-item">
+        <div class="comp-card-flip">
+          <div class="comp-card-front">
+            <picture>
+              <source
+                srcset="/simply-chocolate/assets/comp3-desk@1x-c11d09f8.png 1x, /simply-chocolate/assets/comp3-desk@2x-5374623d.png 2x"
+                media="(min-width: 1200px)"
+                width="206"
+                height="160"
+              />
+
+              <img
+                class="comp-img"
+                srcset="/simply-chocolate/assets/comp3-mob@1x-8608f158.png 1x, /simply-chocolate/assets/comp3-mob@2x-7ac9c84b.png 2x"
+                src="/simply-chocolate/assets/comp3-desk@1x-c11d09f8.png"
+                alt="Nuts"
+                width="224"
+                height="171"
+              />
+            </picture>
+            <p class="comp-card-front-title">Nuts</p>
+          </div>
+
+          <div class="comp-card-back">
+            <h3 class="comp-card-back-title">Nuts</h3>
+            <ul class="comp-card-back-list">
+              <li class="comp-card-back-item">
+                <button class="comp-card-back-btn is-active" type="button">
+                  nuts
+                </button>
+              </li>
+              <li class="comp-card-back-item">
+                <button class="comp-card-back-btn" type="button">
+                  the benefits
+                </button>
+              </li>
+            </ul>
+
+            <div class="comp-card-back-wrp">
+              <p class="comp-card-back-descr">
+                Almonds, pistachios, and walnuts are some types of nuts that
+                contain healthy nutrients. When eaten as part of a
+                nutrient-dense diet, these 9 nuts may offer benefits such as
+                reducing your risk of heart disease. They’re a good source of
+                fiber, healthy fats, and plant protein. Plus, they’re great on
+                their own, paired with fruit, or added to dishes like salads,
+                desserts, and grains.
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="comp-item">
+        <div class="comp-card-flip">
+          <div class="comp-card-front">
+            <picture>
+              <source
+                srcset="/simply-chocolate/assets/comp4-desk@1x-269e22ce.png 1x, /simply-chocolate/assets/comp4-desk@2x-97b7584d.png 2x"
+                media="(min-width: 1200px)"
+                width="206"
+                height="160"
+              />
+
+              <img
+                class="comp-img"
+                srcset="/simply-chocolate/assets/comp4-mob@1x-529646a7.png 1x, /simply-chocolate/assets/comp4-mob@2x-a975342e.png 2x"
+                src="/simply-chocolate/assets/comp4-desk@1x-269e22ce.png"
+                alt="Semi-sweet chocolate"
+                width="224"
+                height="171"
+              />
+            </picture>
+            <p class="comp-card-front-title">Semi-sweet chocolate</p>
+          </div>
+
+          <div class="comp-card-back">
+            <h3 class="comp-card-back-title">sweet chocolate</h3>
+            <ul class="comp-card-back-list">
+              <li class="comp-card-back-item">
+                <button class="comp-card-back-btn is-active" type="button">
+                  sweet chocolate
+                </button>
+              </li>
+              <li class="comp-card-back-item">
+                <button class="comp-card-back-btn" type="button">
+                  the benefits
+                </button>
+              </li>
+            </ul>
+            <div class="comp-card-back-wrp">
+              <p class="comp-card-back-descr">
+                Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One
+                of the best ways to gain an understanding of this type of
+                chocolate is to compare it to a different type of chocolate.
+                Semisweet is darker than milk chocolate. In a taste comparison,
+                it has a slightly bitter taste whereas milk chocolate is sweeter
+                and more mellow. This delectable flavor of chocolate is very
+                versatile.
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section section-made">
+  <div class="container container-made">
+    <h2 class="section-title">
+      hOW IT’S <span class="accent-color">made?</span>
+    </h2>
+
+    <div class="made-wrapper">
+      <div class="made-video">
+        <div class="plyr__video-embed" id="player">
+          <iframe
+            src="https://www.youtube.com/embed/2H0tglcIKsM?autoplay=0&modestbranding=1&controls=0&disablekb=1&playsinline=1&cc_load_policy=1&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fplyr.io%2F%23youtube&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fplyr.io&widgetid=1"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+          ></iframe>
+        </div>
+      </div>
+      <div class="made-content">
+        <h3 class="made-content-title">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+
+        <ul class="made-content-list">
+          <li class="made-content-item">
+            Heat the milk in a saucepan without bringing it to a boil. Add sugar
+            and cocoa powder.
+          </li>
+          <li class="made-content-item">
+            At the same time, prepare a water bath. Melt the butter on it.
+          </li>
+          <li class="made-content-item">
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly
+            with a silicone spatula so that the mass becomes uniform and silky.
+          </li>
+          <li class="made-content-item">
+            Heat the mixture over low heat, letting it barely boil.
+          </li>
+          <li class="made-content-item">
+            Pour the chocolate into special containers (can be replaced with ice
+            molds). Allow to cool and harden.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
 
     
   </body>
