@@ -1,0 +1,49 @@
+.button {
+  padding: 12px 28px;
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear;
+}
+
+.button.main {
+  color: var(--light-text-color);
+  background-color: var(--accent-color);
+}
+
+.button.main:is(:hover, :focus) {
+  color: var(--accent-color);
+  background-color: var(--active-bg-color);
+}
+
+.button.secondary {
+  color: var(--light-text-color);
+  background-color: transparent;
+  border: 1px solid var(--light-text-color);
+}
+
+.button.secondary:is(:hover, :focus) {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.button.inverse {
+  color: var(--dark-text-color);
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+}
+
+.button.inverse:is(:hover, :focus) {
+  color: var(--light-text-color);
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 14px 40px;
+  }
+}
