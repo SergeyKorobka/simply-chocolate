@@ -36,6 +36,7 @@
 }
 
 .nav-link {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -43,7 +44,29 @@
 
   color: var(--light-text-color);
 
+  overflow: hidden;
   transition: color 250ms linear;
+}
+
+.nav-link::after {
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  height: 1px;
+  width: 50%;
+
+  transform: translateX(201%);
+
+  background-color: var(--accent-color);
+  transition: transform 250ms linear;
+}
+
+.nav-link:is(:hover, :focus)::after {
+  transform: translateX(0);
 }
 
 .nav-link:is(:hover, :focus) {

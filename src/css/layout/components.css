@@ -118,6 +118,10 @@
   height: 146px;
   overflow: auto;
   overscroll-behavior: contain;
+  /* overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical; */
 }
 
 .comp-card-back-wrp::-webkit-scrollbar {
